@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  font-weight: normal; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background: #3b94e0;
+  color: #fff;
+  line-height: 2rem; }
+
+.danger {
+  color: #b40505; }
+
+.success {
+  color: #40db40; }
+
+h1 {
+  display: none; }
+
+h3 {
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  color: #e7e4e4; }
+
+#alreadyDoneHeading {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+  display: none; }
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 1rem; }
+
+.input-container {
+  position: relative;
+  margin: 2.5rem 0 4rem 0;
+  height: 5rem; }
+
+#mainTextInput {
+  position: absolute;
+  width: 100%;
+  padding: .8rem 1.5rem;
+  font-size: 2rem;
+  border-radius: 1rem;
+  display: inline-block;
+  border: 2px solid #eee;
+  color: #333;
+  height: 100%;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+  z-index: 500; }
+
+#submitInput {
+  position: absolute;
+  right: 0px;
+  width: 5%;
+  height: 100%;
+  border-radius: 1rem;
+  border: 2px solid #fff;
+  background: #3b94e0;
+  color: #fff;
+  font-size: 2rem;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 100; }
+
+#submitInput:hover {
+  cursor: pointer;
+  border-color: #63ff63; }
+
+#toDoListView, #alreadyDoneListView {
+  font-weight: normal;
+  list-style: none;
+  padding: 0 .8rem;
+  margin-bottom: 3rem; }
+
+#toDoListView li, #alreadyDoneListView li {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem; }
+
+.toDoList-Container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.toDoList-content {
+  width: calc(100% - 7rem); }
+
+.toDoDate {
+  font-size: 1.1rem; }
+
+.toDoText {
+  word-wrap: break-word; }
+
+.toDoList-controlContainer {
+  width: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.toDoList-controlItem {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all .5s;
+  transition: all .5s; }
+
+.toDoList-controlItem:hover {
+  cursor: pointer;
+  border-bottom: 1px solid; }
